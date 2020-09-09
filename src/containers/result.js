@@ -7,7 +7,6 @@ import { resultState } from "../utils/state";
 import ResultItem from "../components/result_item";
 
 const Result = props => {
-  debugger
   const result = useRecoilValue(resultState);
 
   return (

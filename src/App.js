@@ -15,8 +15,8 @@ function App() {
       <Route
         exact
         path="/result"
-        render={ props =>
-          result.length === 0 ?  <Redirect to="/" /> : <Result {...props}/>
+        render={props =>
+          result.length === 0 ? <Redirect to="/" /> : <Result {...props} />
         }
       />
     </Router>

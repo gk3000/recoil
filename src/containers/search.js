@@ -14,6 +14,7 @@ const Search = props => {
       const { data } = await axios.get(
         `https://api.tvmaze.com/search/shows?q=${title}`
       );
+      data.length === 0 && alert('Sorry not show found')
       setResult([...data.filter(ele => ele.show.image)]);
       setTitle('')
       props.history.push("/result");
